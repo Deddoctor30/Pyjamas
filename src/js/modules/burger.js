@@ -1,18 +1,40 @@
-function burger() {
-   const inner = document.querySelector('.header__inner'),
-         line = document.querySelector('.header__line'),
-         menu = document.querySelector('.header__menu'),
-         bar = document.querySelector('.header__right-bar'),
-         burgerTrigger = document.querySelector('.burger');
+const burger = () => {
+   const open = document.querySelector('.burger-open'),
+         close = document.querySelector('.burger-close'),
+         burger = document.querySelector('.burger');
+   close.classList.add('hide');
 
-
-   burgerTrigger.addEventListener('click', () => {
-      inner.classList.toggle('menu-burger');
-      line.classList.toggle('line-wide');
-      menu.classList.toggle('menu-burger');
-      bar.classList.toggle('menu-burger');
-      burgerTrigger.classList.toggle('hide');
+   open.addEventListener('click', () => {
+      openModal()
    });
-};
+
+   close.addEventListener('click', () => {
+      closeModal();
+   });
+
+   burger.addEventListener('click', (e) => {
+      if (e.target === burger) {
+         closeModal();
+      }
+   });
+
+   function openModal () {
+      document.body.style.overflow = 'hidden';                       // запретить скролл
+      open.classList.add('hide');
+      close.classList.remove('hide');
+      burger.style.cssText = `
+      top: ${window.pageYOffset}px;
+      `;
+   }
+
+   function closeModal () {
+      document.body.style.overflow = '';                              // запретить скролл
+      open.classList.remove('hide');
+      close.classList.add('hide');
+      burger.style.cssText = `
+      top: -300px;
+      `;
+   }
+}
 
 export default burger;

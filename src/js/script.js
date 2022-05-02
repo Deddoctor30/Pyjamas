@@ -1,8 +1,14 @@
 'use strict';
 
-// import cardSlider from './modules/card-slider';
+import counter from './modules/counter';
+import scroll from './modules/scroll';
+import burger from './modules/burger';
+import products from './modules/products';
 
 
 window.addEventListener('DOMContentLoaded', () => {
-   // cardSlider();
+   counter();
+   scroll();
+   burger();
+   products();
 });

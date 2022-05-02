@@ -3255,6 +3255,17 @@ mainBtns.addEventListener('click', (event) => {
       console.log(lessonData.dataset.size);
 
 
+      // Например, если у elem есть атрибут "data-about", то обратиться к нему можно как elem.dataset.about.
+      // Как тут:
+      
+      <body data-about="Elephants">
+      <script>
+         alert(document.body.dataset.about); // Elephants
+      </script>
+
+
+
+
 
 
 

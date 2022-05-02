@@ -1,4 +1,4 @@
-import {posting} from '../services/service';
+import {posting} from '../../services/service';
 
 function email() {
    const form = document.querySelector('.contacts__form'),

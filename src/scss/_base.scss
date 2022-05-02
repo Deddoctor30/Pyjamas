@@ -48,15 +48,18 @@ html, body {
 
 
 .img-adaptiv {
+   // padding: 0px 0px 100% 0px;
+   overflow: hidden;
+   text-align: center;
    position: relative;
    img {
-      position: absolute;
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
       object-fit: cover;
       object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
    }
 }
 
@@ -75,7 +78,7 @@ $font_color_light: #FFFFFF;
 $font_color_dark: #333333;
 $button_color_light: #FFFFFF;
 $button_color_dark: #333333;
-$header_line_color: #ffffffdf;
+$header_line_color: #ffffff;
 $modal_bg_color: #FFFFFF;
 $hover_color: #d8d6bf;
 
@@ -164,10 +167,28 @@ $hover_color: #d8d6bf;
    box-sizing: content-box;
 }
 
+.container-short {
+   //_________________Ширина контейнера_________________
+   max-width: 1154px;
+
+   //_____________________По центру_____________________
+   margin: 0 auto;
+
+   //_____________________Отступ безопасности_____________________
+   padding: 0px 15px;
+   box-sizing: content-box;
+}
+
 
 
 //__________________________show & hide__________________________
 
+.hide {
+   display: none;
+}
 
+.show {
+   display: block;
+}
 
 
