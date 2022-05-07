@@ -170,6 +170,15 @@ html, body {
   color: #333333;
 }
 
+.btn:active {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -384,6 +393,11 @@ html, body {
   }
 }
 
+.preview__img {
+  position: relative;
+  width: 686px;
+}
+
 @media (min-width: 410px) {
   .preview__img {
     min-width: 410px;
@@ -398,6 +412,37 @@ html, body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 686px;
           flex: 0 1 686px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.3%;
+  margin: 25px;
+}
+
+.slider__inner {
+  position: relative;
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-slider::before {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
 }
 
 .info {
@@ -584,6 +629,15 @@ html, body {
   background-color: #F2F2F2;
 }
 
+.purchase__controls button:active {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .purchase__controls input {
   height: 44px;
   width: 48px;
@@ -608,6 +662,15 @@ html, body {
   height: 44px;
   width: 44px;
   background-color: #333333;
+}
+
+.purchase__favorite:active {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 525px) {

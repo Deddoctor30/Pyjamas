@@ -76,6 +76,39 @@ const counter = a => {
 
 /***/ }),
 
+/***/ "./src/js/modules/prewiev-slider.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/prewiev-slider.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+const prewievSlider = () => {
+  const mainPick = document.querySelector('.preview__img img');
+  const prewiev = document.querySelectorAll('.slider__inner');
+  const prewievImg = document.querySelectorAll('.preview__slider img');
+
+  function hide() {
+    prewiev.forEach(i => {
+      i.classList.add('hidden-slider');
+    });
+  }
+
+  prewiev.forEach(i => {
+    i.addEventListener('click', e => {
+      if (i.classList.contains('hidden-slider')) {
+        hide();
+        mainPick.src = e.target.firstElementChild.src;
+        i.classList.toggle('hidden-slider');
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (prewievSlider);
+
+/***/ }),
+
 /***/ "./src/js/modules/products.js":
 /*!************************************!*\
   !*** ./src/js/modules/products.js ***!
@@ -226,6 +259,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scroll */ "./src/js/modules/scroll.js");
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 /* harmony import */ var _modules_products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/products */ "./src/js/modules/products.js");
+/* harmony import */ var _modules_prewiev_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/prewiev-slider */ "./src/js/modules/prewiev-slider.js");
+
 
 
 
@@ -237,6 +272,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_modules_burger__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_modules_products__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_modules_prewiev_slider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 });
 }();
 /******/ })()

@@ -140,6 +140,11 @@ $hover_color: #d8d6bf;
          // border: 1px solid black;
       }
    }
+   &:active {
+      transition: none;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 
