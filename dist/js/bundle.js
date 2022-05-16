@@ -42,7 +42,7 @@ const burger = () => {
     open.classList.remove('hide');
     close.classList.add('hide');
     burger.style.cssText = `
-      top: -300px;
+      top: -1000px;
       `;
   }
 };
@@ -86,7 +86,6 @@ __webpack_require__.r(__webpack_exports__);
 const prewievSlider = () => {
   const mainPick = document.querySelector('.preview__img img');
   const prewiev = document.querySelectorAll('.slider__inner');
-  const prewievImg = document.querySelectorAll('.preview__slider img');
 
   function hide() {
     prewiev.forEach(i => {

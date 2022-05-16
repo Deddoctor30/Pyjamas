@@ -32,7 +32,7 @@ const burger = () => {
       open.classList.remove('hide');
       close.classList.add('hide');
       burger.style.cssText = `
-      top: -300px;
+      top: -1000px;
       `;
    }
 }

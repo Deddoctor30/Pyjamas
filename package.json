@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Deddoctor30/Pyjamas.git"
+    "url": "git+https://github.com/Deddoctor30/Sweets-Shop.git"
   },
   "author": "",
   "license": "ISC",
@@ -17,9 +17,9 @@
     "> 1%"
   ],
   "bugs": {
-    "url": "https://github.com/Deddoctor30/Pyjamas/issues"
+    "url": "https://github.com/Deddoctor30/Sweets-Shop/issues"
   },
-  "homepage": "https://github.com/Deddoctor30/Pyjamas",
+  "homepage": "https://github.com/Deddoctor30/Sweets-Shop",
   "dependencies": {
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2"
