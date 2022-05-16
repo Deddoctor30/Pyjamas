@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/favicon.ico">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Test</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__wrapper">
+            <div class="header__line"></div>
+            <div class="header__container container">
+               <div class="header__inner">
+                  <div class="header__logo logo">
+                     <a href="./index.html" class="logo__img">
+                        <span>logo</span>
+                     </a>
+                  </div>
+                  <nav class="header__menu menu">
+                     <ul class="menu__list">
+                        <li class="menu__item">
+                           <img class="menu__link" src="./img/header/Group.svg" alt="account">
+                        </li>
+                        <li class="menu__item">
+                           <img class="menu__link" src="./img/header/Frame.svg" alt="favorite">
+                        </li>
+                        <li class="menu__item">
+                           <img class="menu__link" src="./img/header/Bing.svg" alt="shop">
+                        </li>
+                        <li class="menu__item burger-open">
+                           <img class="burger__img"  src="./img/header/burger-open.svg" alt="burger-open">
+                        </li>
+                        <li class="menu__item burger-close">
+                           <img class="burger__img" data-close="close" src="./img/header/burger-close.svg" alt="burger-close">
+                        </li>
+            
+                     </ul>
+                  </nav>
+            
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+         <div class="main__container container">
+            <section class="main__preview preview">
+               <div class="preview__img">
+                  <img src="./img/main/preview/Group.jpg" alt="preview">
+                  <div class="preview__slider slider">
+                     <div class="slider__inner ">
+                        <img class="slider__img" src="./img/main/preview/Group.jpg" alt="preview">
+                     </div>
+                     <div class="slider__inner hidden-slider">
+                        <img class="slider__img" src="./img/main/gallery/1.jpg" alt="main">
+                     </div>
+                     <div class="slider__inner hidden-slider">
+                        <img class="slider__img" src="./img/main/gallery/2.jpg" alt="main">
+                     </div>
+                     <div class="slider__inner hidden-slider">
+                        <img class="slider__img" src="./img/main/gallery/3.jpg" alt="main">
+                     </div>
+                     <div class="slider__inner hidden-slider">
+                        <img class="slider__img" src="./img/main/gallery/4.jpg" alt="main">
+                     </div>
+                     <div class="slider__inner hidden-slider">
+                        <img class="slider__img" src="./img/main/gallery/5.jpg" alt="main">
+                     </div>
+                  </div>
+               </div>
+               <div class="preview__info info">
+                  <div class="info__name">
+                     <h1 class="info__title">Пижама для девочек</h1>
+                     <p class="info__art">Арт.<span>02765/46</span></p>
+                     <div class="info__ratio">
+                        <p>Отзывы</p>
+                        <div class="info__stars"><img src="./img/main/preview/row.png" alt="ratio"></div>
+                        <p><span class="info__counter">14</span> отзывов</p>
+                     </div>
+                  </div>
+                  <div class="info__coast">
+                     <div class="infow__price price">
+                        <div class="price__new">800 ₽</div>
+                        <div class="price__old">1 500 ₽</div>
+                     </div>
+                     <div class="info__offers">
+                        <p class="info__offer">скидка -36%</p>
+                        <p class="info__action">акция -20%</p>
+                     </div>
+                     <div class="info__active">
+                        <div class="info__form">
+                           <form action="#" method="get" enctype="multipart/form-data">
+                              <select name="size" id="1">
+                                 <option value="null">Выбрать размер</option>
+                                 <option value="small">Маленький размер</option>
+                                 <option value="medium">Средний размер</option>
+                                 <option value="big">Большой размер</option>
+                                 <option value="large">Бегемотик</option>
+                              </select>
+                           </form>
+                        <div class="info__define-size"><a href="#">Определить размер</a></div>
+                        <div class="info__purchase purchase">
+                           <div class="purchase__inner">
+                              <div class="purchase__controls">
+                                 <button data-count="plus" class="purchase__plus">+</button>
+                                 <input class="purchase__counter" name="counter" type="number" min="0" disabled value="0">
+                                 <button data-count="minus" class="purchase__minus">-</button>
+                              </div>
+                              <div class="purchase__add">
+                                 <button class="btn btn_dark" data-add="add">Добавить в корзину</button>
+                              </div>
+                              <div class="purchase__favorite">
+                                 <button><img data-add="heart" src="./img/main/preview/Frame.svg" alt="like"></button>
+                              </div>
+                           </div>
+                           <div class="purchase__click"><a href="#">Купить в 1 клик</a></div>
+                        </div>
+                        <div class="info__others">
+                           <ul class="info__list">
+                              <li class="info__item-info"><a href="#">Описание товара</a></li>
+                              <li class="info__delivery"><a href="#">Доставка и возврат</a></li>
+                              <li class="info__pay"><a href="#">Способы оплаты</a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="main__gallery gallery">
+               <h2 class="gallery__show-all"><span>Посмотреть все стили</span></h2>
+               <div class="gallery__photos">
+                  <div class="gallery__main-photo"><img src="./img/main/gallery/1.jpg" alt="main"></div>
+                  <div class="gallery__set">
+                     <div class="gallery__top-img">
+                        <div class="gallery__img">
+                           <img src="./img/main/gallery/2.jpg" alt="gallery">
+                           <div class="gallery__hover hover">
+                              <span class="hover__top"></span>
+                              <span class="hover__mid"></span>
+                              <span class="hover__text">Узнай, что на мне</span>
+                              <span class="hover__likes">200</span>
+                           </div>
+                        </div>
+                        <div class="gallery__img">
+                           <img src="./img/main/gallery/3.jpg" alt="gallery">
+                           <div class="gallery__hover hover">
+                              <span class="hover__top"></span>
+                              <span class="hover__mid"></span>
+                              <span class="hover__text">Узнай, что на мне</span>
+                              <span class="hover__likes">200</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="gallery__bottom-img">
+                        <div class="gallery__img">
+                           <img src="./img/main/gallery/5.jpg" alt="gallery">
+                           <div class="gallery__hover hover">
+                              <span class="hover__top"></span>
+                              <span class="hover__mid"></span>
+                              <span class="hover__text">Узнай, что на мне</span>
+                              <span class="hover__likes">200</span>
+                           </div>
+                        </div>
+                        <div class="gallery__img">
+                           <img src="./img/main/gallery/4.jpg" alt="gallery">
+                           <div class="gallery__hover hover">
+                              <span class="hover__top"></span>
+                              <span class="hover__mid"></span>
+                              <span class="hover__text">Узнай, что на мне</span>
+                              <span class="hover__likes">200</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container container-short">
+            <div class="footer__inner">
+               <div class="footer__customers customers">
+                  <h3>покупателям</h3>
+                  <ul>
+                     <li><a href="#">Каталог</a></li>
+                     <li><a href="#">Акции</a></li>
+                     <li><a href="#">Бренды</a></li>
+                  </ul>
+               </div>
+               <div class="footer__about about">
+                  <h3>о нас</h3>
+                  <ul>
+                     <li><a href="#">О компании</a></li>
+                     <li><a href="#">Новости</a></li>
+                     <li><a href="#">Команда</a></li>
+                  </ul>
+               </div>
+               <div class="footer__subscription subscription">
+                  <h3>Узнайте первыми о новинках и акциях</h3>
+                  <form action="#" method="get" enctype="multipart/form-data">
+                     <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required >
+                     <button class="btn btn_dark" type="submit">Подписаться</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+      <div class="burger">
+         <ul class="burger__list">
+            <li class="burger__item"><a href="#">постельное белье</a></li>
+            <li class="burger__item"><a href="#">одежда для дома</a></li>
+            <li class="burger__item"><a href="#">Одежда для улицы</a></li>
+            <li class="burger__item"><a href="#">ВЫход</a></li>
+         </ul>
+      </div>
+
+   </div>
+   <script src="../dist/js/bundle.js"></script>
+</body>
+</html>
