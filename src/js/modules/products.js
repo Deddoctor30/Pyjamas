@@ -3,7 +3,6 @@ const products = () => {
    const inner = document.querySelector('.purchase__inner');
    const title = document.querySelector('.info__title');
    let temp = 0;
-
    inner.addEventListener('click', (e) => {
       if (e.target && e.target.dataset.add) {
          if (counter.value > 0 && temp === 0) {

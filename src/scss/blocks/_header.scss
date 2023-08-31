@@ -17,7 +17,6 @@
       top: 0;
       left: 0;
    }
-
    &__inner {
       height: 3.14rem;
       width: 100%;
@@ -41,8 +40,6 @@
 
 .menu {
    z-index: 5;
-   // flex: 0 1 50%;
-   
    &__list {
       display: flex;
       flex-wrap: wrap;
@@ -54,23 +51,8 @@
       }
    }
 
-   &__item {
-      // flex: 0 1 auto;
-      // margin-right: 10px;
-      // &>*:not(:last-child){
-      //    margin: 0px 24px 0px 0px;
-      // }
-     
-   }
-
-   &__burger {
-   }
-
    &__link {
-      // @include style(0.777rem, 200%, $font_color_dark);
-      // transition: 0.3s all ease 0s;
       padding: 15px;
-
       &:hover {
          background-color: $hover_color;
       }

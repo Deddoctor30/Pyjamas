@@ -6,7 +6,6 @@ import burger from './modules/burger';
 import products from './modules/products';
 import prewievSlider from './modules/prewiev-slider';
 
-
 window.addEventListener('DOMContentLoaded', () => {
    counter();
    scroll();

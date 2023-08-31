@@ -10,6 +10,8 @@ const counter = (a) => {
          purchaseCounter.value = +purchaseCounter.value - 1;
       } 
    })
+
+  
 }
 
 export default counter;

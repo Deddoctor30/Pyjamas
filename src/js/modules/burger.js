@@ -3,21 +3,17 @@ const burger = () => {
          close = document.querySelector('.burger-close'),
          burger = document.querySelector('.burger');
    close.classList.add('hide');
-
    open.addEventListener('click', () => {
       openModal()
    });
-
    close.addEventListener('click', () => {
       closeModal();
    });
-
    burger.addEventListener('click', (e) => {
       if (e.target === burger) {
          closeModal();
       }
    });
-
    function openModal () {
       document.body.style.overflow = 'hidden';                       // запретить скролл
       open.classList.add('hide');
@@ -26,7 +22,6 @@ const burger = () => {
       top: ${window.pageYOffset}px;
       `;
    }
-
    function closeModal () {
       document.body.style.overflow = '';                              // запретить скролл
       open.classList.remove('hide');

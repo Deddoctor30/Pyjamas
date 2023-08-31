@@ -3,30 +3,23 @@ import {posting} from '../../services/service';
 function email() {
    const form = document.querySelector('.contacts__form'),
          modal = document.querySelector('.email-form');
-
    let statusMessage;
    let spinner;
-
    const message = {
       loading: 'Идет загрузка',
       spinner: '/src/img/spinner/spinner.svg',
       success: 'Успешно загружено',
       fail: 'Что-то пошло не так'
    } 
-   
    if (form) {
       postData(form);
 
       function postData(form) {
          form.addEventListener('submit', event => {
             event.preventDefault();
-
             showEmailModal();
-
             const formData = new FormData(form);
-
             const json = JSON.stringify(Object.fromEntries(formData.entries()));          // formData => в массив массивов, потом обратно в объект и в json формат
-
             posting('http://localhost:3000/requests', json)
             .then(data => {
                spinner.remove();
@@ -47,7 +40,6 @@ function email() {
          });
       }
    }
-   
 
    function showEmailModal() {
       statusMessage = document.createElement('div')

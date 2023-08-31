@@ -27,10 +27,6 @@
          width: 100%;
       }
    }
-   
-   &__slider {
-   }
-
    &__info {
       flex: 0 1 686px;
    }
@@ -42,22 +38,18 @@
    left: 0;
    width: 10.3%;
    margin: 25px;
-
    &__inner {
       position: relative;
       margin: 0px 0px 10px 0px;
       width: 100%;
       height: 100%;
    }
-
    &__img {
       width: 100%;
-      // height: 100%;
       max-height: 80px;
       overflow: hidden;
    }
 }
-
 .hidden-slider {
    &::before {
       content: "";
@@ -70,23 +62,17 @@
       opacity: 0.4;
    }
 }
-
 .info {
    padding: 26px 20px;
-   &__name {
-   }
-
    &__title {
       @include style(1.29rem, 24px, $font_color_dark);
       font-weight: 600;
       margin: 0px 0px 4px 0px;
    }
-
    &__art {
       @include style(0.86rem, 16px, #828282);
       margin: 0px 0px 8px 0px;
    }
-
    &__ratio {
       display: flex;
       margin: 0px 0px 24px 0px;
@@ -94,7 +80,6 @@
          margin: 0px 10px 0px 0px;
       }
    }
-
    &__offers {
       display: flex;
       margin: 12px 0px 30px 0px;
@@ -109,7 +94,6 @@
          padding: 4px 8px;
       }
    }
-
    &__form {
       select {
          height: 44px;
@@ -122,15 +106,10 @@
          }
       }
    }
-
    &__define-size {
       margin: 30px 0px 0px 0px;
       text-decoration: underline;
    }
-
-   &__purchase {
-   }
-
    &__list {
       margin: 0px 0px 0px 22px;
       &>*{
@@ -142,7 +121,6 @@
          margin: 0px 0px 12px 0px;
       }
    }
-
    &__item-info {
       position: relative;
       &::before {
@@ -158,7 +136,6 @@
        }
 
    }
-
    &__delivery {
       position: relative;
       &::before {
@@ -173,7 +150,6 @@
          left: -22px;
        }
    }
-
    &__pay {
       position: relative;
       &::before {
@@ -189,11 +165,6 @@
        }
    }
 }
-.infow {
-
-   &__price {
-   }
-}
 .price {
    display: flex;
    align-items: center;
@@ -203,7 +174,6 @@
       letter-spacing: 0.04em;
       margin: 0px 12px 0px 0px;
    }
-
    &__old {
       @include style(1rem, 20px, #828282);
       text-decoration: line-through;
@@ -240,7 +210,6 @@
          background-color: #F2F2F2;
       }
    }
-
    &__add {
       button {
          margin: 0px 5px 0px 0px;
@@ -252,7 +221,6 @@
          }
       }
    }
-
    &__favorite {
       button {
          height: 44px;
@@ -264,7 +232,6 @@
          transform: translateY(-1px);
          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
      }
-
       @media (max-width: 525px) {
          margin: 15px 0px 0px 0px;
       }
@@ -274,16 +241,7 @@
       text-decoration: underline;      
     }
 }
-
-
-
-
-
-
-//___________________________________ GALLERY__________________________________________-
-
 .gallery {
-
    &__show-all {
       display: block;
       margin: 0 auto;
@@ -294,7 +252,6 @@
          cursor: pointer;
       }
    }
-
    &__photos {
       display: flex;
       gap: 15px;
@@ -303,7 +260,6 @@
          justify-content: center;
       }
    }
-
    &__main-photo {
       width: 686px;
       max-height: 700px;
@@ -312,23 +268,19 @@
          width: 100%;
       }
    }
-
    &__set {
       max-width: 686px;
       gap: 13px;
    }
-
    &__top-img {
       display: flex;
       gap: 13px;
       margin: 0px 0px 15px 0px;
    }
-
    &__bottom-img {
       display: flex;
       gap: 14px;
    }
-
    &__img {
       max-height: 336px;
       max-width: 335px;
@@ -357,7 +309,6 @@
       }
    }
 }
-
 .hover {
    &__top {
       background-image: url('./../img/main/gallery/img-hover/rect.svg');
@@ -407,4 +358,3 @@
       }
    }
 }
-

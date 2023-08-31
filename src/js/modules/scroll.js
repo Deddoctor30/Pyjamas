@@ -3,10 +3,8 @@ const scroll = () => {
          line = document.querySelector('.header__line'),
          width = window.getComputedStyle(header).height,
          burger = document.querySelector('.burger-open');               // если открыт бургер, но хедер не убирается
-
-      let prevScroll = window.pageYOffset;
-      let currentScroll;
-
+   let prevScroll = window.pageYOffset;
+   let currentScroll;
    window.addEventListener('scroll', () => {
       currentScroll = scrollY;
       
